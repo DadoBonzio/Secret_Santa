@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa</title>
+    <link rel="stylesheet" type="text/css" href="Secret Santa.css">
+    </link>
+    <script type="text/javascript" src="Secret Santa.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "TFTpVIedOIhUZg2EM",
+      });
+   })();
+</script>
+</head>
+
+<body>
+    <header>
+        <h1>Merry Christmas!</h1>
+    </header>
+    <aside>
+        <ol>
+            <h>Intructions</h>
+            <li>Fill    in the list of nicknames with the associated email addresses</li>
+            <li>Check the appropriate box if you want to recive an email with all the secret santa matches</li>
+            <li>Click on the "Send emails" button</li>
+            <li>By the gift</li>
+            <li>Merry Christmas!</li>
+        </ol>
+    </aside>
+    <article>
+        <ol id="peopleList">
+        </ol>
+        <button onclick="addElementToPeopleList()">+</button>
+        <button onclick="removeElementFromPeopleList()">-</button>
+    </article>
+    <article>
+        <button onclick="sendEmails()">Send emails</button>
+    </article>
+    <footer>
+        <p>Made with ❤️ by Daniele</p>
+    </footer>
+</body>
+
+</html>
